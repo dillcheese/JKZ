@@ -32,10 +32,11 @@ h1{
   text-transform: uppercase;
   line-height: 1.25;
   font-weight: 700; 
+  margin-left: 25px;
 }
 
 h2{
-
+  margin-left: 25px;
 
 }
 
