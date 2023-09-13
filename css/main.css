@@ -3,23 +3,60 @@
     --mainColor: #ff9800;
 }
 
+@keyframes example {
+  0%   {background: radial-gradient(#2ea19f, #53c696);}
+  25%  {background: radial-gradient(#27b5b2, #2bc585);}
+  50%  {background: radial-gradient(#10bebb, #0bd682);}
+  75%  {background: radial-gradient(#0dd5d2, #09e489);}
+  100% {background: radial-gradient(#09e2deea, #0adf87);}
+}
 
-  body {
+@keyframes example2 {
+  0%    {background: radial-gradient(#2ea19f, #53c696);}
+  10%   {background: radial-gradient(#27b5b2, #2bc585);}
+  20%   {background: radial-gradient(#10bebb, #0bd682);}
+  30%   {background: radial-gradient(#19bfbceb, #09e489);}
+  40%   {background: radial-gradient(#17b8b6, #0adf87);}
+  50%   {background: radial-gradient(#14b7bd, #0fd682);}
+  60%   {background: radial-gradient(#1ac6ce, #12db8f);}
+  70%   {background: radial-gradient(#1edcdc, #1de7a4);}
+  80%   {background: radial-gradient(#20e0eae0, #1ef387);}
+  90%   {background: radial-gradient(#22e9e6e9, #21ee8e);}
+  100%  {background: radial-gradient(#22e9e6e9, #21ee8e);}
+}
+
+@keyframes pulse {
+  0% {
+    background: radial-gradient(circle, #ff5733, transparent);
+    transform: scale(1);
+  }
+  50% {
+    background: radial-gradient(circle, #ff5733, transparent);
+    transform: scale(1.2);
+  }
+  100% {
+    background: radial-gradient(circle, #ff5733, transparent);
+    transform: scale(1);
+  }
+}
+
+   body {
     margin: 0;
-    height: 100vh;
     font-weight: 100;
     background: radial-gradient(#329d9c, #56c596);
     font-family: 'Montserrat', sans-serif;
-    -webkit-overflow-Y: hidden;
-    -moz-overflow-Y: hidden;
-    -o-overflow-Y: hidden;
-    overflow-y: hidden;
-    -webkit-animation: fadeIn 1 1s ease-out;
-    -moz-animation: fadeIn 1 1s ease-out;
-    -o-animation: fadeIn 1 1s ease-out;
-    animation: fadeIn 1 1s ease-out;
-    overflow: hidden;
-}
+    overflow: auto;
+    
+}  
+
+ /* body{
+  background: radial-gradient(#329d9c, #56c596);
+  animation-name: example2;
+  animation-duration: 4s;
+  animation-timing-function: ease-in-out; 
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+}  */
 
  
 h1{
@@ -35,10 +72,86 @@ h1{
   margin-left: 25px;
 }
 
+.skill-heading{
+  margin-top: 30%;
+  /*margin-bottom: 1px; */
+  margin-right: 1%;
+  text-align: center;
+  font-family: 'Montserrat', sans-serif;
+  text-shadow: 1px 1px #2514e2;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  line-height: 1.0;
+  font-weight: 700; 
+  font-size: 36px;
+  
+}
+
+/* Define the number of columns and column gap */
+.column-paragraph {
+  column-count: 3; /* Three columns */
+  column-gap: 20px; /* Adjust the gap between columns */
+}
+
+/* Style the paragraphs inside the columns */
+.column-paragraph p {
+  margin: 10px; /* Remove default margins for paragraphs */
+  padding: 20px; /* Add some padding for spacing */
+  padding-top: 10px;
+  border: 0px solid #ff0000; /* border for clarity */
+  overflow: auto;
+  align-items: center;
+  text-align: center;
+  font-weight: 700; 
+  font-size: 18px;
+  line-height: 1.75;
+  
+}
+
+
+.list-heading{
+  margin-top: 0%;
+  margin-right: 0%;
+  text-align: center;
+  font-family: 'Montserrat', sans-serif;
+  text-shadow: 1px 1px #6157c6;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  line-height: 2.0;
+  font-weight: 700; 
+  font-size: 24px; /* Change the font size */
+  margin-bottom: 0px;
+ 
+}
+
+/* .listed {
+
+  text-align: center;
+  font-weight: bold; 
+  font-size: 18px;
+  line-height: 1.5;
+} */
+
 h2{
   margin-left: 25px;
 
 }
+
+
+.fade-in-reg {
+  opacity: 0;
+  transition: opacity 1s ease;
+}
+
+.fade-in-image {
+  animation: fadeIn 4s;
+}
+
+@keyframes fadeIn {
+  0% { opacity: 0; }
+  100% { opacity: 1; }
+}
+
 
 footer { 
   position: fixed;
@@ -47,7 +160,7 @@ footer {
   width: 100%;
   background-color: #333;
   color: #f6e5e5;
-  padding: 20px;
+  padding: 10px;
   display: flex;
   justify-content:center;
   align-items: bottom;
@@ -56,8 +169,9 @@ footer {
 
 .footer-links {
   display: flex;
-  gap: 20px;
+  gap: 25px;
   justify-content: center;
+  
 }
 
 .footer-links a {
@@ -78,6 +192,34 @@ footer {
   justify-content: center;
   font-family:Arial, Helvetica, sans-serif;
 
+}
+
+
+.round-button {
+  display: inline-block;
+  padding: 10px 10px; /* Adjust padding for button size */
+  border-radius: 10%; /* Makes the button round */
+  background-color: #2ea19f; /* Button background color */
+  background-color: #333;
+  color: #ffffff; /* Text color */
+  text-decoration: none; /* Remove underlines from the link */
+  font-weight: bold; /* Optional: Adjust text weight */
+  transition: background-color 0.3s ease; /* Smooth background color transition */
+
+  /* Center the icon and text */
+  display: flex;
+  align-items: center;
+}
+
+.round-button:hover {
+  background-color: #53c696; /* Change background color on hover */
+  
+}
+
+/* Adjust the FontAwesome icon size (you may need to adjust this based on your specific use) */
+.round-button .fa {
+  font-size: 24px; /* Adjust icon size */
+  margin-right: 0px; /* Add spacing between icon and text */
 }
 
 
