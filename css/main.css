@@ -22,7 +22,7 @@
   70%   {background: radial-gradient(#1edcdc, #1de7a4);}
   80%   {background: radial-gradient(#20e0eae0, #1ef387);}
   90%   {background: radial-gradient(#22e9e6e9, #21ee8e);}
-  100%  {background: radial-gradient(#22e9e6e9, #21ee8e);}
+  100%  {background: radial-gradient(rgba(34, 233, 230, 0.914), #21ee8e);}
 }
 
 @keyframes pulse {
@@ -40,9 +40,10 @@
   }
 }
 
-   body {
+  body {
     margin: 0;
     font-weight: 100;
+    height: auto;
     background: radial-gradient(#329d9c, #56c596);
     font-family: 'Montserrat', sans-serif;
     overflow: auto;
@@ -125,7 +126,6 @@ h1{
 }
 
 /* .listed {
-
   text-align: center;
   font-weight: bold; 
   font-size: 18px;
@@ -137,6 +137,15 @@ h2{
 
 }
 
+.Projects {
+  margin-right: 0%;
+  font-family: 'Montserrat', sans-serif;
+  letter-spacing: 2px; 
+  margin-bottom: 200px;
+  margin-top: 0px;
+
+
+}
 
 .fade-in-reg {
   opacity: 0;
