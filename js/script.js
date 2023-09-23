@@ -85,11 +85,20 @@ animateGradient();
 
 //carousel stuff
 const carouselItems = document.querySelectorAll('.carousel-item');
-const prevButton = document.querySelector('.arrow.prev');
-const nextButton = document.querySelector('.arrow.next');
 const dotsContainer = document.querySelector('.carousel-dots');
 
 let currentIndex = 0;
+
+// Add click event listeners to the "Next" buttons
+const nextButtons = document.querySelectorAll('.arrow-next');
+nextButtons.forEach(button => {
+    button.addEventListener('click', nextItem);
+});
+
+const prevButtons = document.querySelectorAll('.arrow-prev');
+prevButtons.forEach(button => {
+  button.addEventListener('click', prevItem);
+});
 
 function showItem(index) {
     carouselItems.forEach((item, i) => {
@@ -108,12 +117,6 @@ function nextItem() {
 
 // Initially show the first item
 showItem(currentIndex);
-
-// Add click event listeners to the "Next" buttons
-const nextButtons = document.querySelectorAll('.next-button');
-nextButtons.forEach(button => {
-    button.addEventListener('click', nextItem);
-});
 
 
 function updateDots() {

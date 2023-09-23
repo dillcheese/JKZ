@@ -209,7 +209,7 @@ h2{
   align-items: center;
 }
 
-.next-button {
+.link-button {
   padding: 10px 20px;
   background-color: #007bff;
   color: #fff;
@@ -218,12 +218,12 @@ h2{
   transition: background-color 0.3s ease;
 }
 
-.next-button:hover {
+.link-button:hover {
   background-color: #0056b3;
 }
 
 .arrow-prev, .arrow-next {
-  padding: 10px 10px;
+  padding: 0px 10px;
   background-color: #f1f3f658;
   position: relative;
   height: 50px;
@@ -240,29 +240,21 @@ h2{
   align-items: center;
   text-align: center;
   line-height: 0px;
-
-/* 
-  cursor: pointer;
-  position: relative;
-  top: 50%;
-  width: auto;
-  margin-top: -30px;
-  padding: 16px;
-  color: #cd1b1b;
-  font-weight: bold;
-  font-size: 20px;
-  border-radius: 0 3px 3px 0;
-  user-select: none; */
 }
 
+
+.arrow-prev:hover, .arrow-next:hover {
+  background-color: #dee1e6d7;
+
+}
 .arrow-next {
   right:12%;
-  top:50px; 
+  top:145px; 
 }
 
 .arrow-prev {
   right:92%;
-  top:50px; 
+  top:145px; 
 
 }
 
