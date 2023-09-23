@@ -1,5 +1,5 @@
 const options = {
-  threshold: 0.5, // Trigger when at least 50% of the element is in the viewport
+  threshold: 0.2, // Trigger when at least 50% of the element is in the viewport
 };
 
 const observer = new IntersectionObserver((entries) => {
@@ -82,3 +82,73 @@ function animateGradient() {
 
 // Start the animation loop
 animateGradient(); 
+
+//carousel stuff
+const carouselItems = document.querySelectorAll('.carousel-item');
+const prevButton = document.querySelector('.arrow.prev');
+const nextButton = document.querySelector('.arrow.next');
+const dotsContainer = document.querySelector('.carousel-dots');
+
+let currentIndex = 0;
+
+function showItem(index) {
+    carouselItems.forEach((item, i) => {
+        if (i === index) {
+            item.style.display = 'block';
+        } else {
+            item.style.display = 'none';
+        }
+    });
+}
+
+function nextItem() {
+    currentIndex = (currentIndex + 1) % carouselItems.length;
+    showItem(currentIndex);
+}
+
+// Initially show the first item
+showItem(currentIndex);
+
+// Add click event listeners to the "Next" buttons
+const nextButtons = document.querySelectorAll('.next-button');
+nextButtons.forEach(button => {
+    button.addEventListener('click', nextItem);
+});
+
+
+function updateDots() {
+  dotsContainer.innerHTML = '';
+  carouselItems.forEach((_, i) => {
+      const dot = document.createElement('span');
+      dot.classList.add('dot');
+      if (i === currentIndex) {
+          dot.classList.add('active');
+      }
+      dot.addEventListener('click', () => {
+          currentIndex = i;
+          showItem(currentIndex);
+          updateDots();
+      });
+      dotsContainer.appendChild(dot);
+  });
+}
+
+function prevItem() {
+  currentIndex = (currentIndex - 1 + carouselItems.length) % carouselItems.length;
+  showItem(currentIndex);
+  updateDots();
+}
+
+function nextItem() {
+  currentIndex = (currentIndex + 1) % carouselItems.length;
+  showItem(currentIndex);
+  updateDots();
+}
+
+// Initially show the first item and update dots
+showItem(currentIndex);
+updateDots();
+
+// Add click event listeners to arrow buttons
+prevButton.addEventListener('click', prevItem);
+nextButton.addEventListener('click', nextItem);
