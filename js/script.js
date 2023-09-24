@@ -39,13 +39,13 @@ function lerpGradient(startGradient, endGradient, t) {
 
 function animateGradient() {
   const startGradient = [
-      { r: 46, g: 161, b: 159 },  // Red
-      { r: 83, g: 198, b: 150 } // Yellow
+      { r: 46, g: 161, b: 159 },  //
+      { r: 83, g: 198, b: 150 } // 
   ];
 
   const endGradient = [
-      { r: 30, g: 220, b: 220 },  // Blue
-      { r: 29, g: 231, b: 164 }   // Green
+      { r: 31, g: 220, b: 220 },  
+      { r: 29, g: 231, b: 164 }   
   ];
 
   let startTime;

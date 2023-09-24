@@ -17,7 +17,7 @@
   20%   {background: radial-gradient(#10bebb, #0bd682);}
   30%   {background: radial-gradient(#19bfbceb, #09e489);}
   40%   {background: radial-gradient(#17b8b6, #0adf87);}
-  50%   {background: radial-gradient(#14b7bd, #0fd682);}
+  50%   {background: radial-gradient(rgb(20, 183, 189), rgb(15, 214, 130));}
   60%   {background: radial-gradient(#1ac6ce, #12db8f);}
   70%   {background: radial-gradient(#1edcdc, #1de7a4);}
   80%   {background: radial-gradient(#20e0eae0, #1ef387);}
@@ -40,7 +40,7 @@
   }
 }
 
-  body {
+body {
     margin: 0;
     font-weight: 100;
     height: auto;
@@ -74,9 +74,9 @@ h1{
 }
 
 .skill-heading{
-  margin-top: 30%;
+  margin-top: 5%;
   /*margin-bottom: 1px; */
-  margin-right: 1%;
+  margin-right: 0%;
   text-align: center;
   font-family: 'Montserrat', sans-serif;
   text-shadow: 1px 1px #2514e2;
@@ -85,20 +85,33 @@ h1{
   line-height: 1.0;
   font-weight: 700; 
   font-size: 36px;
+  padding-top: 35px;
   
 }
+
+.container2{
+  background-color: #4693e582;
+  margin-top: 25%;
+  padding-bottom: 20%;
+  padding-top: 10px;
+  width:100%;
+}
+
+
 
 /* Define the number of columns and column gap */
 .column-paragraph {
   column-count: 3; /* Three columns */
-  column-gap: 20px; /* Adjust the gap between columns */
+  column-gap: 15px; /* Adjust the gap between columns */
+  align-items: center;
+  text-align: center;
+  margin-top: 0px;
+ 
 }
 
 /* Style the paragraphs inside the columns */
 .column-paragraph p {
-  margin: 10px; /* Remove default margins for paragraphs */
-  padding: 20px; /* Add some padding for spacing */
-  padding-top: 10px;
+  padding: 20px; 
   border: 0px solid #ff0000; /* border for clarity */
   overflow: auto;
   align-items: center;
@@ -106,12 +119,10 @@ h1{
   font-weight: 700; 
   font-size: 18px;
   line-height: 1.75;
-  
 }
 
-
 .list-heading{
-  margin-top: 0%;
+  margin-top: 1%;
   margin-right: 0%;
   text-align: center;
   font-family: 'Montserrat', sans-serif;
@@ -125,26 +136,39 @@ h1{
  
 }
 
-/* .listed {
-  text-align: center;
-  font-weight: bold; 
-  font-size: 18px;
-  line-height: 1.5;
-} */
+.listed{
+  margin-top: 0px;
+}
 
-h2{
+h2{  
   margin-left: 25px;
-
 }
 
 .Projects {
   margin-right: 0%;
   font-family: 'Montserrat', sans-serif;
   letter-spacing: 2px; 
-  margin-bottom: 200px;
+  margin-bottom: 1px;
   margin-top: 0px;
+  padding-top: 10px;
+  padding-bottom: 18%;
+}
 
-
+.skill-heading2{
+  margin-top: 10%;
+  /*margin-bottom: 1px; */
+  margin-right: 1%;
+  text-align: center;
+  font-family: 'Montserrat', sans-serif;
+  text-shadow: 1px 1px #2514e2;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  line-height: 1.0;
+  font-weight: 700; 
+  font-size: 36px;
+  padding-top: 0px;
+  padding-bottom: 20px;
+  
 }
 
 .fade-in-reg {
@@ -160,32 +184,6 @@ h2{
   0% { opacity: 0; }
   100% { opacity: 1; }
 }
-
-/* .carousel {
-  display:flex;
-  overflow: visible;
-  width: 90%;
-  height: 100%; 
-  margin: 0 auto; 
-  text-align: center;
-
-}
-
-.carousel-container {
-  width: 50%;
-  margin-bottom: 100px;
-  text-align: center;
-}
-
-.carousel p {
-  background-color: rgba(0, 0, 0, 0.7);
-  color: #fff;
-  padding: 5px;
-  position:relative;
-  bottom: 0;
-  width: 90%;
-  margin: 0;
-} */
 
 .carousel-container {
   display: flex;
@@ -210,12 +208,15 @@ h2{
 }
 
 .link-button {
-  padding: 10px 20px;
+  padding: 15px 25px;
   background-color: #007bff;
   color: #fff;
   border: none;
   cursor: pointer;
+  border-radius: 8%; 
   transition: background-color 0.3s ease;
+  font-family: 'Montserrat', sans-serif;
+
 }
 
 .link-button:hover {
@@ -224,6 +225,7 @@ h2{
 
 .arrow-prev, .arrow-next {
   padding: 0px 10px;
+  padding-bottom: 5px;
   background-color: #f1f3f658;
   position: relative;
   height: 50px;
@@ -231,7 +233,7 @@ h2{
   border-color: #e9e9e900;
   cursor: pointer;
   z-index: 1;
-  border-radius: 50%; 
+  border-radius: 30%; 
   width: 50px;
   max-width: 50px;
   display: inline-block;
@@ -240,6 +242,8 @@ h2{
   align-items: center;
   text-align: center;
   line-height: 0px;
+  display:table-cell;
+  vertical-align:middle;
 }
 
 
@@ -283,8 +287,8 @@ footer {
   left: 0;
   width: 100%;
   background-color: #333;
-  color: #f6e5e5;
-  padding: 10px;
+  padding-top: 10px;
+  padding-bottom: 10px;
   display: flex;
   justify-content:center;
   align-items: bottom;
@@ -293,7 +297,7 @@ footer {
 
 .footer-links {
   display: flex;
-  gap: 25px;
+  gap: 35px;
   justify-content: center;
   
 }
@@ -305,7 +309,6 @@ footer {
   display: flex;
   justify-content: center;
   
-
 }
 
 .footer-links a2 {
@@ -318,7 +321,7 @@ footer {
 
 }
 
-
+/* footer link buttons */
 .round-button {
   display: inline-block;
   padding: 10px 10px; /* Adjust padding for button size */
@@ -340,15 +343,9 @@ footer {
   
 }
 
-/* Adjust the FontAwesome icon size (you may need to adjust this based on your specific use) */
 .round-button .fa {
   font-size: 24px; /* Adjust icon size */
   margin-right: 0px; /* Add spacing between icon and text */
 }
 
 
-/*  .itch {
-  color: #fff;
-  display:inline-block;
-  width: 40%;
-}  */
