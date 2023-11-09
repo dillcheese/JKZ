@@ -38,7 +38,7 @@ function lerpGradient(startGradient, endGradient, t) {
 }
 
 function animateGradient() {
-  const startGradient = [
+ /*  const startGradient = [
       { r: 46, g: 161, b: 159 },  //
       { r: 83, g: 198, b: 150 } // 
   ];
@@ -47,6 +47,17 @@ function animateGradient() {
       { r: 31, g: 220, b: 220 },  
       { r: 29, g: 231, b: 164 }   
   ];
+ */
+
+  const startGradient = [
+    { r: 0, g: 116, b: 228 },   // Start Color: #0074E4
+    { r: 0, g: 196, b: 179 }   // End Color: #00C4B3
+];
+
+const endGradient = [
+  { r: 255, g: 51, b: 51 },    // Start Color: #FF3333
+  { r: 255, g: 165, b: 0 }    // End Color: #FFA500
+];
 
   let startTime;
 

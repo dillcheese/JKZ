@@ -3,8 +3,8 @@
     --mainColor: #ff9800;
 }
 
-@keyframes example {
-  0%   {background: radial-gradient(#2ea19f, #53c696);}
+/* @keyframes example {
+  0%   {background: radial-gradient(#c4c9c9, #53c696);}
   25%  {background: radial-gradient(#27b5b2, #2bc585);}
   50%  {background: radial-gradient(#10bebb, #0bd682);}
   75%  {background: radial-gradient(#0dd5d2, #09e489);}
@@ -12,7 +12,7 @@
 }
 
 @keyframes example2 {
-  0%    {background: radial-gradient(#2ea19f, #53c696);}
+  0%    {background: radial-gradient(#fcfcfc, #53c696);}
   10%   {background: radial-gradient(#27b5b2, #2bc585);}
   20%   {background: radial-gradient(#10bebb, #0bd682);}
   30%   {background: radial-gradient(#19bfbceb, #09e489);}
@@ -22,10 +22,10 @@
   70%   {background: radial-gradient(#1edcdc, #1de7a4);}
   80%   {background: radial-gradient(#20e0eae0, #1ef387);}
   90%   {background: radial-gradient(#22e9e6e9, #21ee8e);}
-  100%  {background: radial-gradient(rgba(34, 233, 230, 0.914), #21ee8e);}
-}
+  100%  {background: radial-gradient(rgba(34, 233, 230, 0.914), #000000);}
+} */
 
-@keyframes pulse {
+/* @keyframes pulse {
   0% {
     background: radial-gradient(circle, #ff5733, transparent);
     transform: scale(1);
@@ -38,7 +38,7 @@
     background: radial-gradient(circle, #ff5733, transparent);
     transform: scale(1);
   }
-}
+} */
 
 body {
     margin: 0;
