@@ -47,8 +47,16 @@ body {
     background: radial-gradient(#329d9c, #56c596);
     font-family: 'Montserrat', sans-serif;
     overflow: auto;
-    
 }  
+
+#myBox{
+  margin: 0;
+    font-weight: 100;
+    height: auto;
+    background: radial-gradient(#329d9c, #56c596);
+    font-family: 'Montserrat', sans-serif;
+    overflow: auto;
+}
 
  /* body{
   background: radial-gradient(#329d9c, #56c596);
@@ -59,7 +67,6 @@ body {
   animation-direction: alternate;
 }  */
 
- 
 h1{
   margin-top: 15%;
   margin-right: 25%;
@@ -96,7 +103,6 @@ h1{
   padding-top: 10px;
   width:100%;
 }
-
 
 
 /* Define the number of columns and column gap */

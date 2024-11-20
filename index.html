@@ -1,99 +1,147 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
+  <head>
+    <meta charset="utf-8" />
     <title>Home</title>
-    <link rel="stylesheet" href="css/main.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-</head>
+    <link rel="stylesheet" href="css/main.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+  </head>
 
-<body id="myBox">
-<div class="homescreen" >
-    <div class="overlay">
-        <div class="container">
-            <section class="fade-in-image">
-                <h1 class="heading" width="20">Hi there! My name is Jackie.</h1>
-                <h2 class="heading2"> I'm a Game Developement student with a passion for creating games 
-                    and constantly seeking new opportunities to learn and create. <br/>
-                </h2>
+  <body id="myBox">
 
+    <header></header>
+    <nav></nav>
+    <main></main>
+    <div class="homescreen">
+      <div class="container">
+        <section class="fade-in-image">
+          <h1 class="heading" width="20">Hi there! My name is Jackie.</h1>
+          <h2 class="heading2">
+            I'm a Game Developement student with a passion for coding and
+            creating games and constantly seeking new opportunities to learn and
+            create. <br />
+          </h2>
+        </section>
+
+        <section class="fade-in-reg">
+          <div class="container2">
+            <h1 class="skill-heading">My Skills</h1>
+            <section class="column-paragraph">
+              <p class="listed">
+                <strong class="list-heading">Languages</strong> <br />
+                C# <br />
+                C++ <br />
+                Python <br />
+                Java <br />
+                JavaScript <br />
+                HTML <br />
+                CSS
+              </p>
+              <p class="listed">
+                <strong class="list-heading">Frameworks</strong> <br />
+                Unity <br />
+                Android Studio <br />
+                Eclipse <br />
+                IntelliJ <br />
+                JavaScript <br />
+                HTML <br />
+                CSS
+              </p>
+              <p class="listed">
+                <strong class="list-heading">Tools</strong> <br />
+                Github/Gitkraken <br />
+                FMod <br />
+                Trello <br />
+                Excel <br />
+              </p>
             </section>
+          </div>
+        </section>
 
-            
-            <section class="fade-in-reg">
-                <div class="container2">
-                    <h1 class="skill-heading">My Skills</h1>
-                        <section class="column-paragraph">
+        <section class="Projects">
+          <h1 class="skill-heading2">My Featured Projects</h1>
 
-                        <p class="listed"><strong class="list-heading">Languages</strong> <br> C# <br > C++ <br> Python <br> Java <br> JavaScript <br> HTML <br> CSS  </p>
-                        <p class="listed"><strong class="list-heading">Frameworks</strong> <br> Unity  <br> Android Studio  <br> Eclipse <br> IntelliJ  <br> JavaScript <br> HTML <br> CSS   </p>
-                        <p class="listed"><strong class="list-heading">Tools</strong> <br> Github <br> FMod <br> Trello <br> Excel <br> <br></p>
-            
-                        </section>
-        
-                </div>
-        
-            </section>
+          <div class="carousel-container">
+            <div class="carousel-item">
+              <img src="images/dam.png" alt="1" />
+              <p>
+                A first person tower defense shooter game made using a custom
+                C++ game engine.
+              </p>
+              <button
+                class="link-button"
+                onclick="window.open('https://github.com/LuminousAme/Dam-Defense', '_blank'); "
+              >
+                Repository
+              </button>
+            </div>
+            <div class="carousel-item">
+              <img src="images/neon.png" alt=" 2" />
+              <p>
+                A first person multiplayer arena melee combat game made using
+                Unity.
+              </p>
+              <button
+                class="link-button"
+                onclick="window.open('https://github.com/LuminousAme/Project-Neon', '_blank'); "
+              >
+                Repository
+              </button>
+            </div>
+            <div class="carousel-item">
+              <img src="images/cc.png" alt=" 3" />
+              <p>A top down sci fi RTS game made using Unity.</p>
+              <button
+                class="link-button"
+                onclick="window.open('https://github.com/LuminousAme/Project-Stellar-Strategy', '_blank'); "
+              >
+                Repository
+              </button>
+            </div>
+            <div class="carousel-item">
+              <img src="images/ascent.jpeg" alt="4" />
+              <p>A 2D platformer game made using Unity.</p>
+              <button
+                class="link-button"
+                onclick="window.open('https://github.com/dillcheese/Ascent', '_blank'); "
+              >
+                Repository
+              </button>
+            </div>
 
-            <section class = "Projects">
-             
-                <h1 class="skill-heading2">Featured Game Projects</h1>
-
-                <div class="carousel-container">
-                    <div class="carousel-item">
-                        <img src="images/dam.png" alt=" 1">
-                        <p>A first person tower defense shooter game made using a custom C++ game engine. </p>
-                        <button class="link-button" onclick="window.open('https://github.com/LuminousAme/Dam-Defense', '_blank'); ">Repository</button>
-                    </div>
-                    <div class="carousel-item">
-                        <img src="images/neon.png" alt=" 2">
-                        <p>A first person multiplayer arena melee combat game made using Unity.</p>
-                        <button class="link-button" onclick="window.open('https://github.com/LuminousAme/Project-Neon', '_blank'); ">Repository</button>
-                    </div>
-                    <div class="carousel-item">
-                        <img src="images/cc.png" alt=" 3">
-                        <p>A top down sci fi RTS game made using Unity.</p>
-                        <button class="link-button" onclick="window.open('https://github.com/LuminousAme/Project-Stellar-Strategy', '_blank'); " >Repository</button>
-                    </div>
-                    <div class="carousel-item">
-                        <img src="images/ascent.jpeg" alt=" 4">
-                        <p>A 2D platformer game made using Unity.</p>
-                        <button class="link-button" onclick="window.open('https://github.com/dillcheese/Ascent', '_blank'); " >Repository</button>
-                    </div>
-
-                
-                    <button class="arrow-prev">&#8592;</button>
-                    <button class="arrow-next">&#8594;</button>
-                </div>
-                <div class="carousel-dots"></div>
-
-            </section>
-
-            <footer>
-                <div class="footer-links">
-                    <a href="http://www.github.com/dillcheese" target="_blank"  class="round-button">
-                        <span class="fa fa-github"></span>&nbsp; Github
-                      </a>
-                  <a href="mailto:jzhou39@gmail.com" target="_blank" class="round-button"> 
-                    <span class="fa fa-file-text" ></span>&nbsp; Email
-                    </a>
-                  <a href="https://dillcheese.itch.io/" target="_blank" class="round-button">
-                     <span class="fa fa-gamepad"></span>&nbsp; Itch.io
-                    </a>
-                  
-
-                </div>
-                   
-            </footer>
-
-        </div>
+            <button class="arrow-prev">&#8592;</button>
+            <button class="arrow-next">&#8594;</button>
+          </div>
+          <div class="carousel-dots"></div>
+        </section>
+      </div>
     </div>
-</div>
 
+    <footer>
+      <div class="footer-links">
+        <a
+          href="http://www.github.com/dillcheese"
+          target="_blank"
+          class="round-button"
+        >
+          <span class="fa fa-github"></span>&nbsp; Github
+        </a>
+        <a href="mailto:jzhou39@gmail.com" target="_blank" class="round-button">
+          <span class="fa fa-file-text"></span>&nbsp; Email
+        </a>
+        <a
+          href="https://dillcheese.itch.io/"
+          target="_blank"
+          class="round-button"
+        >
+          <span class="fa fa-gamepad"></span>&nbsp; Itch.io
+        </a>
+      </div>
+    </footer>
 
-<script src="js/script.js"></script>
-
-</body>
-
+    <script src="js/script.js"></script>
+  </body>
 </html>
-

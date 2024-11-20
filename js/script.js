@@ -14,7 +14,7 @@ const observer = new IntersectionObserver((entries) => {
 observer.observe(document.querySelector(".fade-in-reg"));
 
 
-//lerping bakcground
+//lerping background
 const colorBox = document.getElementById('myBox');
 const animationDuration = 3000; // Duration of each animation cycle in milliseconds (2 seconds)
 const pauseDuration = 100;     // Duration to pause between animations in milliseconds (1 second)
